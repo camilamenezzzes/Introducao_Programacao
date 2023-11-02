@@ -1,0 +1,19 @@
+#Faça um programa que receba os valores de A, B e C e aplique-os na formula de Bhaskara
+#para calcular suas raízes.
+a = float(input("Digite o valor de A:"))
+b = float(input("Digite o valor B:"))
+c = float(input("Digite o valor de C:"))
+
+delta = (b**2) - 4*a*c
+if a==0:
+ print("Nao e equacao de segundo grau")
+elif delta<0:
+ print("Nao existe raiz")
+elif delta==0:
+ x=(-b - delta**1/2)/(2*a)
+ print("Existe uma raiz real. O valor da raíz  é:",x)
+elif delta>=0:
+ x1 = (-b + delta ** (1/2)) / (2*a)
+ x2 = (-b - delta ** (1/2)) / (2*a)
+ print("O valor da raíz 1 é:",x1)
+ print("O valor da raíz 2 é:",x2)
